@@ -72,7 +72,6 @@
       ]
     }
   ],
-  "functions": {},
   "rewrites": [
     {
       "source": "/(.*)",
