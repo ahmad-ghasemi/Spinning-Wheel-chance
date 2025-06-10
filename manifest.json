@@ -1,0 +1,92 @@
+{
+  "name": "گردونه شانس Tetisnet",
+  "short_name": "گردونه شانس",
+  "description": "گردونه شانس کارمند نمونه Tetisnet - برنامه وب پیشرفته",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "fa",
+  "dir": "rtl",
+  "categories": ["games", "entertainment", "productivity"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCI+PHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiBmaWxsPSIjNjY3ZWVhIiByeD0iOCIvPjxjaXJjbGUgY3g9IjI0IiBjeT0iMjQiIHI9IjE2IiBmaWxsPSIjZmY2YjZiIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iOCIgZmlsbD0iIzQ5Y2RjNCIvPjx0ZXh0IHg9IjI0IiB5PSIyOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxMiIgZmlsbD0id2hpdGUiPvCfjY48L3RleHQ+PC9zdmc+",
+      "sizes": "48x48",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MiIgaGVpZ2h0PSI3MiI+PHJlY3Qgd2lkdGg9IjcyIiBoZWlnaHQ9IjcyIiBmaWxsPSIjNjY3ZWVhIiByeD0iMTIiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjM2IiByPSIyNCIgZmlsbD0iI2ZmNmI2YiIvPjxjaXJjbGUgY3g9IjM2IiBjeT0iMzYiIHI9IjEyIiBmaWxsPSIjNDljZGM0Ii8+PHRleHQgeD0iMzYiIHk9IjQyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE2IiBmaWxsPSJ3aGl0ZSI+8J+NjjwvdGV4dD48L3N2Zz4=",
+      "sizes": "72x72",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiI+PHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiBmaWxsPSIjNjY3ZWVhIiByeD0iMTYiLz48Y2lyY2xlIGN4PSI0OCIgY3k9IjQ4IiByPSIzMiIgZmlsbD0iI2ZmNmI2YiIvPjxjaXJjbGUgY3g9IjQ4IiBjeT0iNDgiIHI9IjE2IiBmaWxsPSIjNDljZGM0Ii8+PHRleHQgeD0iNDgiIHk9IjU2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjIwIiBmaWxsPSJ3aGl0ZSI+8J+NjjwvdGV4dD48L3N2Zz4=",
+      "sizes": "96x96",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDQiIGhlaWdodD0iMTQ0Ij48cmVjdCB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgZmlsbD0iIzY2N2VlYSIgcng9IjI0Ii8+PGNpcmNsZSBjeD0iNzIiIGN5PSI3MiIgcj0iNDgiIGZpbGw9IiNmZjZiNmIiLz48Y2lyY2xlIGN4PSI3MiIgY3k9IjcyIiByPSIyNCIgZmlsbD0iIzQ5Y2RjNCIvPjx0ZXh0IHg9IjcyIiB5PSI4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiPvCfjY48L3RleHQ+PC9zdmc+",
+      "sizes": "144x144",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgZmlsbD0iIzY2N2VlYSIgcng9IjMwIi8+PGNpcmNsZSBjeD0iOTAiIGN5PSI5MCIgcj0iNjAiIGZpbGw9IiNmZjZiNmIiLz48Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSIzMCIgZmlsbD0iIzQ5Y2RjNCIvPjx0ZXh0IHg9IjkwIiB5PSI5OCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIzMCIgZmlsbD0id2hpdGUiPvCfjY48L3RleHQ+PC9zdmc+",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIj48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgZmlsbD0iIzY2N2VlYSIgcng9IjMyIi8+PGNpcmNsZSBjeD0iOTYiIGN5PSI5NiIgcj0iNjQiIGZpbGw9IiNmZjZiNmIiLz48Y2lyY2xlIGN4PSI5NiIgY3k9Ijk2IiByPSIzMiIgZmlsbD0iIzQ5Y2RjNCIvPjx0ZXh0IHg9Ijk2IiB5PSIxMDQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMzIiIGZpbGw9IndoaXRlIj7wn42OPC90ZXh0Pjwvc3ZnPg==",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzY2N2VlYSIgcng9Ijg0Ii8+PGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSIxNzAiIGZpbGw9IiNmZjZiNmIiLz48Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9Ijg1IiBmaWxsPSIjNDljZGM0Ii8+PHRleHQgeD0iMjU2IiB5PSIyODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iODQiIGZpbGw9IndoaXRlIj7wn42OPC90ZXh0Pjwvc3ZnPg==",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NDAiIGhlaWdodD0iNzIwIj48cmVjdCB3aWR0aD0iNTQwIiBoZWlnaHQ9IjcyMCIgZmlsbD0iIzY2N2VlYSIvPjxjaXJjbGUgY3g9IjI3MCIgY3k9IjM2MCIgcj0iMTUwIiBmaWxsPSIjZmY2YjZiIi8+PHRleHQgeD0iMjcwIiB5PSI2MDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iNDgiIGZpbGw9IndoaXRlIj7ar9ix2K/ZiNmG2Ycg2LTYp9mG2LM8L3RleHQ+PC9zdmc+",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iNTQwIj48cmVjdCB3aWR0aD0iNzIwIiBoZWlnaHQ9IjU0MCIgZmlsbD0iIzY2N2VlYSIvPjxjaXJjbGUgY3g9IjM2MCIgY3k9IjI3MCIgcj0iMTIwIiBmaWxsPSIjZmY2YjZiIi8+PHRleHQgeD0iMzYwIiB5PSI0NjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMzYiIGZpbGw9IndoaXRlIj7ar9ix2K/ZiNmG2Ycg2LTYp9mG2LM8L3RleHQ+PC9zdmc+",
+      "sizes": "720x540",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "شروع بازی",
+      "short_name": "بازی",
+      "description": "شروع گردونه شانس",
+      "url": "/",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NiIgaGVpZ2h0PSI5NiI+PGNpcmNsZSBjeD0iNDgiIGN5PSI0OCIgcj0iNDAiIGZpbGw9IiNmZjZiNmIiLz48cG9seWdvbiBwb2ludHM9IjQwLDM2IDU2LDQ4IDQwLDYwIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+} 

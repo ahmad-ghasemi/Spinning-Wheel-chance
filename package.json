@@ -1,0 +1,54 @@
+{
+  "name": "tetisnet-spinning-wheel",
+  "version": "1.0.0",
+  "description": "A beautiful Persian Progressive Web App spinning wheel for Tetisnet employee rewards",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "npx live-server .",
+    "build": "echo 'No build step required for static site'",
+    "deploy": "vercel --prod",
+    "lighthouse": "lighthouse http://localhost:8000 --output html --output-path ./lighthouse-report.html",
+    "validate": "html-validate index.html"
+  },
+  "keywords": [
+    "pwa",
+    "spinning-wheel",
+    "persian",
+    "farsi",
+    "tetisnet",
+    "employee-rewards",
+    "javascript",
+    "html5",
+    "css3",
+    "responsive",
+    "mobile",
+    "offline"
+  ],
+  "author": "Tetisnet Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/tetisnet-spinning-wheel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/tetisnet-spinning-wheel/issues"
+  },
+  "homepage": "https://tetisnet-spinning-wheel.vercel.app",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "lighthouse": "^11.4.0",
+    "html-validate": "^8.7.4",
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+} 

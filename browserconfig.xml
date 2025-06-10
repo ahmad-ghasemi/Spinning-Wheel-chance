@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MCIgaGVpZ2h0PSI3MCI+PHJlY3Qgd2lkdGg9IjcwIiBoZWlnaHQ9IjcwIiBmaWxsPSIjNjY3ZWVhIi8+PGNpcmNsZSBjeD0iMzUiIGN5PSIzNSIgcj0iMjQiIGZpbGw9IiNmZjZiNmIiLz48dGV4dCB4PSIzNSIgeT0iNDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IndoaXRlIj7wn42OPC90ZXh0Pjwvc3ZnPg=="/>
+            <square150x150logo src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIj48cmVjdCB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzY2N2VlYSIvPjxjaXJjbGUgY3g9Ijc1IiBjeT0iNzUiIHI9IjUwIiBmaWxsPSIjZmY2YjZiIi8+PHRleHQgeD0iNzUiIHk9Ijg0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjI0IiBmaWxsPSJ3aGl0ZSI+8J+NjjwvdGV4dD48L3N2Zz4="/>
+            <wide310x150logo src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMTAiIGhlaWdodD0iMTUwIj48cmVjdCB3aWR0aD0iMzEwIiBoZWlnaHQ9IjE1MCIgZmlsbD0iIzY2N2VlYSIvPjxjaXJjbGUgY3g9IjEwMCIgY3k9Ijc1IiByPSI0MCIgZmlsbD0iI2ZmNmI2YiIvPjx0ZXh0IHg9IjIwMCIgeT0iODQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIj7ar9ix2K/ZiNmG2Ycg2LTYp9mG2LM8L3RleHQ+PC9zdmc+"/>
+            <square310x310logo src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMTAiIGhlaWdodD0iMzEwIj48cmVjdCB3aWR0aD0iMzEwIiBoZWlnaHQ9IjMxMCIgZmlsbD0iIzY2N2VlYSIvPjxjaXJjbGUgY3g9IjE1NSIgY3k9IjE1NSIgcj0iMTAwIiBmaWxsPSIjZmY2YjZiIi8+PGNpcmNsZSBjeD0iMTU1IiBjeT0iMTU1IiByPSI1MCIgZmlsbD0iIzQ5Y2RjNCIvPjx0ZXh0IHg9IjE1NSIgeT0iMjMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjM2IiBmaWxsPSJ3aGl0ZSI+2q/Ysdiv2YjZhtmHINi02KfZhtizPC90ZXh0Pjx0ZXh0IHg9IjE1NSIgeT0iMTcwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjQwIiBmaWxsPSJ3aGl0ZSI+8J+NjjwvdGV4dD48L3N2Zz4="/>
+            <TileColor>#667eea</TileColor>
+        </tile>
+        <notification>
+            <polling-uri src=""/>
+            <frequency>30</frequency>
+            <cycle>1</cycle>
+        </notification>
+    </msapplication>
+</browserconfig> 
