@@ -6,25 +6,7 @@
     <title>گردونه شانس Tetisnet</title>
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
     
-    <!-- PWA Meta Tags -->
-    <meta name="description" content="گردونه شانس کارمند نمونه Tetisnet - برنامه وب پیشرفته">
-    <meta name="theme-color" content="#667eea">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="گردونه شانس">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="گردونه شانس Tetisnet">
-    <meta name="msapplication-TileColor" content="#667eea">
-    <meta name="msapplication-config" content="browserconfig.xml">
-    
-    <!-- Favicon and App Icons -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiI+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTQiIGZpbGw9IiM2NjdlZWEiLz48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSI4IiBmaWxsPSIjZmY2YjZiIi8+PC9zdmc+">
-    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgZmlsbD0iIzY2N2VlYSIgcng9IjIwIi8+PGNpcmNsZSBjeD0iOTAiIGN5PSI5MCIgcj0iNjAiIGZpbGw9IiNmZjZiNmIiLz48Y2lyY2xlIGN4PSI5MCIgY3k9IjkwIiByPSIzMCIgZmlsbD0iIzQ5Y2RjNCIvPjx0ZXh0IHg9IjkwIiB5PSI5NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiPvCfjY4gPC90ZXh0Pjwvc3ZnPg==">
-    
-    <link rel="manifest" href="manifest.json">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
-        
         * {
             margin: 0;
             padding: 0;
@@ -32,62 +14,33 @@
         }
 
         body {
-            font-family: 'Vazir', 'Amiri', 'Tahoma', Arial, sans-serif;
+            font-family: 'Vazir', Arial, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 20px;
         }
 
-        .container {
-            text-align: center;
-            max-width: 1200px;
-            width: 100%;
-        }
-
-        .main-content {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .wheel-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .controls-section {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            min-width: 300px;
-        }
-
         .header {
+            text-align: center;
             margin-bottom: 30px;
         }
 
         .logo {
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: white;
             font-size: 2.5rem;
             font-weight: bold;
             margin-bottom: 10px;
-            font-family: 'Amiri', 'Vazir', serif;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         .subtitle {
             color: white;
             font-size: 1.2rem;
             opacity: 0.9;
-            font-family: 'Vazir', sans-serif;
         }
 
         .wheel-container {
@@ -111,13 +64,13 @@
         }
 
         .wheel {
-            width: 550px;
-            height: 550px;
+            width: 500px;
+            height: 500px;
             border-radius: 50%;
             position: relative;
             overflow: hidden;
             border: 8px solid #fff;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.3), 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
             transition: transform 4s cubic-bezier(0.17, 0.67, 0.12, 0.99);
             max-width: 90vw;
             max-height: 90vw;
@@ -128,8 +81,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 70px;
-            height: 70px;
+            width: 60px;
+            height: 60px;
             background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
             border-radius: 50%;
             display: flex;
@@ -140,7 +93,7 @@
         }
 
         .wheel-center span {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
 
         .spin-button {
@@ -191,7 +144,6 @@
             width: 90%;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             animation: modalPop 0.5s ease;
-            font-family: 'Vazir', sans-serif;
         }
 
         @keyframes modalPop {
@@ -204,7 +156,6 @@
             color: #333;
             margin-bottom: 20px;
             font-weight: bold;
-            font-family: 'Amiri', 'Vazir', serif;
         }
 
         .result-text {
@@ -212,11 +163,10 @@
             color: #666;
             line-height: 1.6;
             margin-bottom: 30px;
-            font-family: 'Vazir', sans-serif;
         }
 
         .close-button {
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
             color: white;
             border: none;
             padding: 12px 30px;
@@ -232,81 +182,12 @@
             box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
         }
 
-        .admin-panel {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 20px;
-            margin-top: 30px;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .admin-title {
-            color: white;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            font-weight: bold;
-            font-family: 'Vazir', sans-serif;
-        }
-
-        .admin-controls {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .admin-button {
-            background: rgba(255,255,255,0.2);
-            color: white;
-            border: 1px solid rgba(255,255,255,0.3);
-            padding: 10px 20px;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-            font-family: 'Vazir', sans-serif;
-        }
-
-        .admin-button:hover {
-            background: rgba(255,255,255,0.3);
-            transform: translateY(-2px);
-        }
-
-        .item-input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid rgba(255,255,255,0.3);
-            border-radius: 10px;
-            background: rgba(255,255,255,0.1);
-            color: white;
-            font-size: 1rem;
-            font-family: 'Vazir', sans-serif;
-        }
-
-        .item-input::placeholder {
-            color: rgba(255,255,255,0.7);
-        }
-
         @media (max-width: 480px) {
-            .main-content {
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-            }
-
-            .controls-section {
-                min-width: auto;
-                width: 100%;
-                max-width: 400px;
-            }
-
             .wheel {
                 width: 85vw;
                 height: 85vw;
-                min-width: 320px;
-                min-height: 320px;
+                min-width: 300px;
+                min-height: 300px;
             }
             
             .logo {
@@ -316,163 +197,31 @@
             .subtitle {
                 font-size: 1rem;
             }
-
-            .container {
-                padding: 10px;
-            }
-
+            
             .spin-button {
                 padding: 12px 30px;
                 font-size: 1.1rem;
             }
         }
-
-        @media (max-width: 360px) {
-            .wheel {
-                width: 90vw;
-                height: 90vw;
-                min-width: 280px;
-                min-height: 280px;
-            }
-
-            .wheel-center {
-                width: 50px;
-                height: 50px;
-            }
-
-            .wheel-center span {
-                font-size: 1rem;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .main-content {
-                align-items: center;
-            }
-            
-            .controls-section {
-                max-width: 350px;
-            }
-        }
-
-        /* PWA Standalone Mode Styles */
-        .standalone-mode {
-            padding-top: env(safe-area-inset-top);
-            padding-bottom: env(safe-area-inset-bottom);
-            padding-left: env(safe-area-inset-left);
-            padding-right: env(safe-area-inset-right);
-        }
-
-        .standalone-mode .container {
-            max-height: 100vh;
-            overflow: hidden;
-        }
-
-        /* iOS specific styles */
-        @supports (-webkit-touch-callout: none) {
-            .standalone-mode {
-                padding-top: max(env(safe-area-inset-top), 20px);
-            }
-        }
-
-        /* Install banner animation */
-        #install-banner {
-            animation: slideInFromTop 0.5s ease-out;
-        }
-
-        @keyframes slideInFromTop {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        /* Prevent text selection in standalone mode */
-        .standalone-mode * {
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        .standalone-mode input[type="text"],
-        .standalone-mode textarea {
-            -webkit-user-select: text;
-            -moz-user-select: text;
-            -ms-user-select: text;
-            user-select: text;
-        }
-
-        /* PWA splash screen background */
-        @media (display-mode: standalone) {
-            body {
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            }
-        }
-
-        /* Responsive adjustments for PWA */
-        @media screen and (max-width: 768px) and (display-mode: standalone) {
-            .wheel-container {
-                transform: scale(0.9);
-            }
-            
-            .management-panel {
-                padding: 10px;
-            }
-            
-            .item-input {
-                font-size: 16px; /* Prevent zoom on iOS */
-            }
-        }
-
-        /* Hide scrollbars in standalone mode */
-        .standalone-mode::-webkit-scrollbar {
-            display: none;
-        }
-
-        .standalone-mode {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1 class="logo">Tetisnet</h1>
-            <p class="subtitle">گردونه شانس کارمند نمونه</p>
+    <div class="header">
+        <h1 class="logo">گردونه شانس Tetisnet</h1>
+        <p class="subtitle">کارمند نمونه</p>
+    </div>
+
+    <div class="wheel-container">
+        <div class="wheel-pointer"></div>
+        <div class="wheel" id="wheel">
+            <!-- Segments will be generated by JavaScript -->
         </div>
-
-        <div class="main-content">
-            <div class="wheel-section">
-                <div class="wheel-container">
-                    <div class="wheel-pointer"></div>
-                    <div class="wheel" id="wheel">
-                        <!-- Segments will be generated by JavaScript -->
-                    </div>
-                    <div class="wheel-center">
-                        <span style="font-size: 1.2rem;">🎁</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="controls-section">
-                <button class="spin-button" id="spinButton">بچرخون!</button>
-
-                <div class="admin-panel">
-                    <h3 class="admin-title">پنل مدیریت</h3>
-                    <div class="admin-controls">
-                        <button class="admin-button" onclick="showItems()">مشاهده آیتم‌ها</button>
-                        <button class="admin-button" onclick="resetToDefault()">بازگشت به پیش‌فرض</button>
-                    </div>
-                </div>
-            </div>
+        <div class="wheel-center">
+            <span>🎁</span>
         </div>
     </div>
+
+    <button class="spin-button" id="spinButton">بچرخون!</button>
 
     <!-- Result Modal -->
     <div class="result-modal" id="resultModal">
@@ -484,8 +233,8 @@
     </div>
 
     <script>
-        // Default prize items
-        const defaultPrizes = [
+        // Prize items
+        const prizes = [
             "همین حالا برو خونه! مرخصی فوری با حقوق",
             "یه روز مرخصی با حقوق برای هر وقت که دلت خواست",
             "۲ تا صبح به جای ساعت ۹ ساعت ۱۱ بیا شرکت",
@@ -508,7 +257,6 @@
             "۲۰ تا سفر درون شهریت با تپسی/اسنپ با شرکت"
         ];
 
-        let prizes = [...defaultPrizes];
         let isSpinning = false;
 
         // Color palette for wheel segments
@@ -525,21 +273,21 @@
             
             const segmentAngle = 360 / prizes.length;
             
-            // Create SVG wheel for better precision
+            // Create SVG wheel
             const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
             svg.setAttribute('width', '100%');
             svg.setAttribute('height', '100%');
-            svg.setAttribute('viewBox', '0 0 550 550');
+            svg.setAttribute('viewBox', '0 0 500 500');
             svg.style.position = 'absolute';
             svg.style.top = '0';
             svg.style.left = '0';
             
-            const centerX = 275;
-            const centerY = 275;
-            const radius = 270;
+            const centerX = 250;
+            const centerY = 250;
+            const radius = 240;
             
             prizes.forEach((prize, index) => {
-                // Calculate segment angles - starting from top (12 o'clock)
+                // Calculate segment angles
                 const startAngle = (index * segmentAngle) * Math.PI / 180;
                 const endAngle = ((index + 1) * segmentAngle) * Math.PI / 180;
                 
@@ -549,7 +297,6 @@
                 const y2 = centerY - radius * Math.cos(endAngle);
                 
                 const largeArcFlag = segmentAngle > 180 ? 1 : 0;
-                
                 const pathData = `M ${centerX} ${centerY} L ${x1} ${y1} A ${radius} ${radius} 0 ${largeArcFlag} 1 ${x2} ${y2} Z`;
                 
                 const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
@@ -557,57 +304,39 @@
                 path.setAttribute('fill', colors[index % colors.length]);
                 path.setAttribute('stroke', 'rgba(255,255,255,0.3)');
                 path.setAttribute('stroke-width', '2');
-                
                 svg.appendChild(path);
                 
-                // Add text along radius - from edge toward center
+                // Add text
                 const textAngle = (index + 0.5) * segmentAngle;
                 const textAngleRad = textAngle * Math.PI / 180;
-                
-                // Position text along the radius, starting from outer edge
-                const outerRadius = radius * 0.85;
-                const innerRadius = radius * 0.3;
-                
-                // Calculate text position (middle of the segment radius)
-                const textRadius = (outerRadius + innerRadius) / 2;
+                const textRadius = radius * 0.65;
                 const textX = centerX + textRadius * Math.sin(textAngleRad);
                 const textY = centerY - textRadius * Math.cos(textAngleRad);
                 
-                // Create single text element along radius
                 const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
                 text.setAttribute('x', textX);
                 text.setAttribute('y', textY);
                 text.setAttribute('text-anchor', 'middle');
                 text.setAttribute('dominant-baseline', 'middle');
                 text.setAttribute('fill', 'white');
-                
-                // Dynamic font size based on number of segments and text length
-                const baseFontSize = Math.max(10, Math.min(16, 280 / prizes.length));
-                const textLength = prize.length;
-                const fontSize = Math.max(9, Math.min(baseFontSize, 200 / textLength));
-                
-                text.setAttribute('font-size', fontSize);
+                text.setAttribute('font-size', Math.max(8, Math.min(14, 200 / prizes.length)));
                 text.setAttribute('font-weight', 'bold');
-                text.setAttribute('font-family', 'Vazir, Tahoma, Arial, sans-serif');
+                text.setAttribute('font-family', 'Vazir, Arial, sans-serif');
                 text.style.filter = 'drop-shadow(2px 2px 4px rgba(0,0,0,0.8))';
                 
-                // Rotate text to align with radius (perpendicular to the edge)
+                // Rotate text
                 let rotationAngle = textAngle + 90;
-                
-                // Adjust rotation to make text readable (not upside down)
                 if (textAngle > 90 && textAngle < 270) {
                     rotationAngle = textAngle + 180 + 90;
                 }
-                
                 text.setAttribute('transform', `rotate(${rotationAngle}, ${textX}, ${textY})`);
                 
                 // Truncate text if too long
                 let displayText = prize;
-                const maxLength = Math.floor(300 / fontSize);
+                const maxLength = Math.max(10, Math.floor(50 / Math.sqrt(prizes.length)));
                 if (displayText.length > maxLength) {
-                    displayText = displayText.substring(0, maxLength - 3) + '...';
+                    displayText = displayText.substring(0, maxLength) + '...';
                 }
-                
                 text.textContent = displayText;
                 svg.appendChild(text);
             });
@@ -626,27 +355,20 @@
             const wheel = document.getElementById('wheel');
             const segmentAngle = 360 / prizes.length;
             
-            // Random number of rotations (5-10 full rotations)
-            const minRotations = 5;
-            const maxRotations = 10;
-            const rotations = Math.random() * (maxRotations - minRotations) + minRotations;
-            
-            // Random final angle (0-360 degrees)
+            // Random rotations and final angle
+            const rotations = Math.random() * 5 + 5; // 5-10 rotations
             const randomAngle = Math.random() * 360;
             const finalAngle = (rotations * 360) + randomAngle;
             
             wheel.style.transform = `rotate(${finalAngle}deg)`;
             
             setTimeout(() => {
-                // Calculate which segment the pointer hits
-                // Since segments start from 0 degrees (top) and wheel rotates clockwise
-                // We need to find which segment is at the top (under the pointer) after rotation
+                // Calculate winning segment
                 const normalizedAngle = (360 - (finalAngle % 360)) % 360;
                 const winningSegmentIndex = Math.floor(normalizedAngle / segmentAngle) % prizes.length;
                 
-                console.log(`Rotation: ${finalAngle}°, Normalized: ${normalizedAngle}°, Segment: ${winningSegmentIndex}`);
-                
                 showResult(prizes[winningSegmentIndex]);
+                
                 isSpinning = false;
                 spinButton.disabled = false;
                 spinButton.textContent = 'بچرخون!';
@@ -666,171 +388,11 @@
             resultModal.style.display = 'none';
         }
 
-        function showItems() {
-            const itemsList = prizes.map((prize, index) => `${index + 1}. ${prize}`).join('\n');
-            alert('آیتم‌های موجود:\n\n' + itemsList);
-        }
-
-        function resetToDefault() {
-            if (confirm('آیا مطمئن هستید که می‌خواهید به آیتم‌های پیش‌فرض برگردید؟')) {
-                prizes = [...defaultPrizes];
-                generateWheel();
-                alert('آیتم‌ها به حالت پیش‌فرض برگشت!');
-            }
-        }
-
-        // Event listeners
+        // Event listener
         document.getElementById('spinButton').addEventListener('click', spinWheel);
 
         // Initialize wheel
         generateWheel();
-
-        // Try to load prizes from external file
-        async function loadPrizesFromFile() {
-            try {
-                const response = await fetch('prizes.txt');
-                if (response.ok) {
-                    const content = await response.text();
-                    const newPrizes = content.split('\n')
-                        .map(line => line.trim())
-                        .filter(line => line.length > 0);
-                    
-                    if (newPrizes.length > 0) {
-                        prizes = newPrizes;
-                        generateWheel();
-                        console.log(`✅ ${newPrizes.length} آیتم از فایل خارجی بارگیری شد`);
-                    }
-                } else {
-                    console.log('⚠️ فایل prizes.txt پیدا نشد، از آیتم‌های پیش‌فرض استفاده می‌شود');
-                }
-            } catch (error) {
-                console.log('⚠️ خطا در خواندن فایل، از آیتم‌های پیش‌فرض استفاده می‌شود:', error.message);
-            }
-        }
-
-        // Load prizes on page load
-        loadPrizesFromFile();
-
-        // PWA Service Worker Registration
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('data:text/javascript;base64,c2VsZi5hZGRFdmVudExpc3RlbmVyKCdpbnN0YWxsJywgZnVuY3Rpb24oZXZlbnQpIHsgZXZlbnQud2FpdFVudGlsKHNlbGYuc2tpcFdhaXRpbmcoKSk7IH0pOyBzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2ZldGNoJywgZnVuY3Rpb24oZXZlbnQpIHsgZXZlbnQucmVzcG9uZFdpdGgoZmV0Y2goZXZlbnQucmVxdWVzdCkpOyB9KTs=')
-                .then(() => console.log('Service Worker registered'))
-                .catch(() => console.log('Service Worker registration failed'));
-        }
     </script>
-
-    <!-- Service Worker Registration -->
-    <script>
-        // Register Service Worker for PWA functionality
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(registration => {
-                        console.log('SW registered: ', registration);
-                        
-                        // Check for updates
-                        registration.addEventListener('updatefound', () => {
-                            const newWorker = registration.installing;
-                            newWorker.addEventListener('statechange', () => {
-                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                                    // New content is available, refresh the page
-                                    if (confirm('نسخه جدید اپلیکیشن در دسترس است. برای بروزرسانی صفحه را تازه‌سازی کنید.')) {
-                                        window.location.reload();
-                                    }
-                                }
-                            });
-                        });
-                    })
-                    .catch(error => {
-                        console.log('SW registration failed: ', error);
-                    });
-            });
-
-            // Listen for messages from service worker
-            navigator.serviceWorker.addEventListener('message', event => {
-                console.log('Message from SW:', event.data);
-            });
-        }
-
-        // Add to home screen prompt
-        let deferredPrompt;
-        window.addEventListener('beforeinstallprompt', (e) => {
-            // Prevent Chrome 67 and earlier from automatically showing the prompt
-            e.preventDefault();
-            // Stash the event so it can be triggered later
-            deferredPrompt = e;
-            
-            // Show install button or banner
-            showInstallBanner();
-        });
-
-        function showInstallBanner() {
-            // Create install banner
-            const installBanner = document.createElement('div');
-            installBanner.id = 'install-banner';
-            installBanner.innerHTML = `
-                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; margin: 10px; border-radius: 10px; text-align: center; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);">
-                    <p style="margin: 0 0 10px 0; font-family: Vazir, sans-serif;">اپلیکیشن گردونه شانس را نصب کنید</p>
-                    <button onclick="installPWA()" style="background: white; color: #667eea; border: none; padding: 8px 20px; border-radius: 5px; font-family: Vazir, sans-serif; cursor: pointer; margin-left: 10px;">نصب</button>
-                    <button onclick="dismissInstall()" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 8px 20px; border-radius: 5px; font-family: Vazir, sans-serif; cursor: pointer;">بعداً</button>
-                </div>
-            `;
-            
-            document.body.insertBefore(installBanner, document.body.firstChild);
-        }
-
-        function installPWA() {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                deferredPrompt.userChoice.then((choiceResult) => {
-                    if (choiceResult.outcome === 'accepted') {
-                        console.log('User accepted the install prompt');
-                    } else {
-                        console.log('User dismissed the install prompt');
-                    }
-                    deferredPrompt = null;
-                    dismissInstall();
-                });
-            }
-        }
-
-        function dismissInstall() {
-            const banner = document.getElementById('install-banner');
-            if (banner) {
-                banner.remove();
-            }
-        }
-
-        // Handle app installed event
-        window.addEventListener('appinstalled', (evt) => {
-            console.log('App was installed');
-            dismissInstall();
-        });
-
-        // Check if app is in standalone mode (installed)
-        function isStandalone() {
-            return window.matchMedia('(display-mode: standalone)').matches || 
-                   window.navigator.standalone === true;
-        }
-
-        // Add visual feedback for standalone mode
-        if (isStandalone()) {
-            document.body.classList.add('standalone-mode');
-        }
-
-        // Prevent right-click context menu in standalone mode
-        if (isStandalone()) {
-            document.addEventListener('contextmenu', e => e.preventDefault());
-        }
-
-        // Handle back button in standalone mode
-        if (isStandalone()) {
-            window.addEventListener('popstate', function(event) {
-                // Handle back navigation if needed
-                console.log('Back button pressed in standalone mode');
-            });
-        }
-    </script>
-
 </body>
 </html>
