@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>گردونه شانس Tetisnet</title>
+    
+    <!-- Preload fonts for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
     
     <style>
@@ -14,7 +19,7 @@
         }
 
         body {
-            font-family: 'Vazir', Arial, sans-serif;
+            font-family: 'Vazirmatn', 'Vazir', 'Tahoma', Arial, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
@@ -35,12 +40,14 @@
             font-weight: bold;
             margin-bottom: 10px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-family: 'Vazirmatn', 'Vazir', 'Tahoma', Arial, sans-serif;
         }
 
         .subtitle {
             color: white;
             font-size: 1.2rem;
             opacity: 0.9;
+            font-family: 'Vazirmatn', 'Vazir', 'Tahoma', Arial, sans-serif;
         }
 
         .wheel-container {
@@ -108,7 +115,7 @@
             box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
             transition: all 0.3s ease;
             margin: 20px 0;
-            font-family: 'Vazir', sans-serif;
+            font-family: 'Vazirmatn', 'Vazir', 'Tahoma', Arial, sans-serif;
         }
 
         .spin-button:hover {
@@ -144,6 +151,7 @@
             width: 90%;
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             animation: modalPop 0.5s ease;
+            font-family: 'Vazirmatn', 'Vazir', 'Tahoma', Arial, sans-serif;
         }
 
         @keyframes modalPop {
@@ -156,6 +164,7 @@
             color: #333;
             margin-bottom: 20px;
             font-weight: bold;
+            font-family: 'Vazirmatn', 'Vazir', 'Tahoma', Arial, sans-serif;
         }
 
         .result-text {
@@ -163,6 +172,7 @@
             color: #666;
             line-height: 1.6;
             margin-bottom: 30px;
+            font-family: 'Vazirmatn', 'Vazir', 'Tahoma', Arial, sans-serif;
         }
 
         .close-button {
@@ -174,7 +184,7 @@
             font-size: 1rem;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-family: 'Vazir', sans-serif;
+            font-family: 'Vazirmatn', 'Vazir', 'Tahoma', Arial, sans-serif;
         }
 
         .close-button:hover {
@@ -203,9 +213,20 @@
                 font-size: 1.1rem;
             }
         }
+
+        /* Force font loading */
+        .font-preload {
+            font-family: 'Vazirmatn', 'Vazir', 'Tahoma', Arial, sans-serif;
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+        }
     </style>
 </head>
 <body>
+    <!-- Force font loading -->
+    <div class="font-preload">.</div>
+    
     <div class="header">
         <h1 class="logo">گردونه شانس Tetisnet</h1>
         <p class="subtitle">کارمند نمونه</p>
@@ -267,6 +288,14 @@
             '#f1948a', '#85929e', '#f4d03f', '#af7ac5', '#5dade2'
         ];
 
+        // Wait for fonts to load before generating wheel
+        document.fonts.ready.then(() => {
+            generateWheel();
+        }).catch(() => {
+            // Fallback if font loading fails
+            setTimeout(generateWheel, 100);
+        });
+
         function generateWheel() {
             const wheel = document.getElementById('wheel');
             wheel.innerHTML = '';
@@ -321,7 +350,7 @@
                 text.setAttribute('fill', 'white');
                 text.setAttribute('font-size', Math.max(8, Math.min(14, 200 / prizes.length)));
                 text.setAttribute('font-weight', 'bold');
-                text.setAttribute('font-family', 'Vazir, Arial, sans-serif');
+                text.setAttribute('font-family', 'Vazirmatn, Vazir, Tahoma, Arial, sans-serif');
                 text.style.filter = 'drop-shadow(2px 2px 4px rgba(0,0,0,0.8))';
                 
                 // Rotate text
@@ -391,8 +420,10 @@
         // Event listener
         document.getElementById('spinButton').addEventListener('click', spinWheel);
 
-        // Initialize wheel
-        generateWheel();
+        // Fallback initialization if font loading API is not available
+        if (!document.fonts) {
+            setTimeout(generateWheel, 100);
+        }
     </script>
 </body>
 </html>
