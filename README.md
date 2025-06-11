@@ -225,7 +225,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For support and questions:
 - Open an issue on GitHub
-- Contact: [your-email@example.com]
+- Contact: [gh.ahmad1371@gmail.com]
 
 ---
 
